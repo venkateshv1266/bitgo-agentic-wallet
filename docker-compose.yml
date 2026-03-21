@@ -1,0 +1,11 @@
+services:
+  bitgo-express:
+    image: bitgo/express:latest
+    platform: linux/amd64
+    ports:
+      - "3080:3080"
+    environment:
+      BITGO_ENV: test
+      BITGO_BIND: "0.0.0.0"
+      BITGO_PORT: "3080"
+    restart: unless-stopped

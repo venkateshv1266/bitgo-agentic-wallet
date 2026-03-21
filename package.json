@@ -1,0 +1,19 @@
+{
+  "name": "agentic-wallet",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/server",
+    "packages/ui"
+  ],
+  "scripts": {
+    "start": "./scripts/start.sh",
+    "dev": "concurrently \"npm run dev -w packages/server\" \"npm run dev -w packages/ui\"",
+    "build": "npm run build -w packages/server && npm run build -w packages/ui",
+    "server": "npm run dev -w packages/server",
+    "ui": "npm run dev -w packages/ui"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

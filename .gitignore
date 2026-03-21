@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Secrets & credentials
+.env
+
+# Encrypted vault (wallet passphrases)
+vault.enc.json
+
+# Runtime data (contains wallet IDs, tx details, session info)
+*.jsonl
+guard-policies.json
+
+# Claude Code local settings
+.claude/
+
+# Documentation (kept locally, not in repo)
+docs/
+
+# OS & editor
+.DS_Store
+*.log
+.idea/
+.vscode/
